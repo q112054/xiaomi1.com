@@ -1,0 +1,133 @@
+header {
+    width: 100%;
+    background-color: #333;
+
+    >.container {
+        width: 1226px;
+        height: 40px;
+        color: #b0b0b0;
+
+        margin: 0 auto;
+
+        // 导航栏
+        >nav {
+            list-style: none;
+
+            >li {
+                float: left;
+                font-size: 12px;
+                cursor: pointer;
+
+                >a {
+                    height: 40px;
+                    line-height: 40px;
+                    color: #b0b0b0;
+                    border-right: 1px solid #424242;
+                    padding: 0 10px;
+                }
+            }
+            //app
+            >.app:hover .tri{
+                display: block;
+            }
+            >.app:hover .appL{
+                height: 140px;
+                border: 1px solid rgba(0, 0, 0, .1);
+
+            }
+            >.app {
+                position: relative;
+                // overflow: hidden;
+                .tri {
+                    position: absolute;
+                    top: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border: 10px solid #fff;
+                    border-top: none;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    display: none;
+                }
+                .appL {
+                    border-radius: 8px;
+                    transition: all .4s ease;
+                    overflow: hidden;
+                    width: 120px;
+                    height: 0;
+                    position: absolute;
+                    top: 40px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: white;
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+                    z-index: 3;
+                    text-align: center;
+                    >.icon-ico {
+                        font-size: 70px;
+                        display: inline-block;
+                        margin: 10px 0 0;
+                    }
+                }
+            }
+
+            >li:hover a {
+                color: white;
+            }
+
+            >li:first-of-type a {
+                padding-left: 0;
+            }
+
+            >li:last-of-type a {
+                border-right: none;
+            }
+        }
+
+        // 购物车
+        >.cart:hover .cartL{
+            height: 100px;
+            border: 1px solid rgba(0, 0, 0, .1);
+        }
+        >.cart {
+            width: 120px;
+            height: 100%;
+            color: #b0b0b0;
+            background-color: #424242;
+            float: right;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            // overflow: hidden;
+
+            .icon-gouwuche {
+                font-size: 20px;
+            }
+
+            span {
+                font-size: 14px;
+                display: inline-block;
+                line-height: 40px;
+            }
+
+            >span:last-of-type {
+                vertical-align: top;
+            }
+            >.cartL {
+                width: 320px;
+                height: 0px;
+                position: absolute;
+                background-color: white;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+                right: 0;
+                z-index: 3;
+                border-radius: 4px;
+                transition: all .4s ease;
+            }
+        }
+
+        >nav:last-of-type {
+            float: right;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+// 右侧固定定位导航栏
+#fixNav {
+    width: 84px;
+    height: 561px;
+    z-index: 1000;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    & li {
+        height: 90px;
+        border:2px solid #f5f5f5;
+        background-color: #fff;
+        text-align: center;
+        span {
+            display: inline-block;
+            font-size: 34px;
+            margin: 16px 0 4px 0;
+        }
+        p {
+            font-size: 14px;
+            user-select: none;
+        }
+    }
+    & li:hover span{
+        color: orange;
+    }
+    & li:hover p{
+        color: orange;
+    }
+}

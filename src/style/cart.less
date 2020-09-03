@@ -1,0 +1,359 @@
+@import './common.less';
+@import './footer.less';
+@import './fixedNav.less';
+@import './cNav.less';
+@import './fixedNav.less';
+
+header {
+    width: 100%;
+    border-bottom: 2px solid #ff6700;
+
+    >.m_header {
+        width: 1224px;
+        margin: 0 auto;
+        height: 100px;
+        padding-top: 26px;
+
+        >.logo {
+            width: 48px;
+            float: left;
+            height: 48px;
+            margin-right: 45px;
+            position: relative;
+            background-color: #ff6700;
+
+            >a {
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: block;
+                background-color: #ff6700;
+                width: 48px;
+                height: 48px;
+                background: url('../images/mi-logo.png') no-repeat 50% 50%;
+                transition: all .2s;
+            }
+
+            >a:first-of-type {
+                background: url('../images/mi-logo.png') no-repeat 50% 50%;
+            }
+
+            >a:last-of-type {
+                left: -60px;
+                background: url('../images/mi-home.png') no-repeat 50% 50%;
+            }
+        }
+
+        >.logo:hover a:first-of-type {
+            transform: translateX(60px);
+        }
+
+        >.logo:hover a:last-of-type {
+            transform: translateX(60px);
+        }
+
+        .title {
+            line-height: 48px;
+            font-size: 28px;
+            float: left;
+        }
+
+        .desc {
+            float: left;
+            height: 20px;
+            line-height: 20px;
+            margin-left: 15px;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #757575;
+        }
+
+        nav {
+            float: right;
+            height: 40px;
+            line-height: 40px;
+            margin-top: 4px;
+            color: #757575;
+            font-size: 12px;
+
+            >li {
+                float: left;
+                padding: 0 20px;
+                cursor: pointer;
+                position: relative;
+
+                .icon-ren {
+                    margin-right: 10px;
+                }
+
+                >nav {
+                    width: 110px;
+                    height: 0;
+                    position: absolute;
+                    left: 50%;
+                    border-radius: 6px;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    background-color: #fff;
+                    z-index: 3;
+                    overflow: hidden;
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+                    transition: all .3s ease;
+                    // border: 1px solid rgba(0, 0, 0, .1);
+
+                    >li {
+                        width: 100%;
+                        text-align: center;
+                        height: 20px;
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+
+            >span {
+                float: left;
+            }
+
+            >li:first-of-type:hover {
+                >nav {
+                    height: 150px;
+                }
+
+                >.color {
+                    color: #ff6700;
+                }
+            }
+
+        }
+    }
+}
+
+// 购物车
+
+#cart {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 38px 0;
+
+    >.m_cart {
+        width: 1224px;
+        background-color: #fff;
+        margin: 0 auto;
+
+        >.cart_title {
+            height: 70px;
+            border-bottom: 2px solid #f5f5f5;
+            color: #424242;
+            line-height: 70px;
+            padding-right: 26px;
+            font-size: 14px;
+            
+        }
+
+        .cart_check {
+            width: 110px;
+            line-height: 70px;
+            height: 100%;
+            float: left;
+            font-size: 14px;
+            position: relative;
+            >input {
+                // position: absolute;
+                // top: 17px;
+                zoom: 150%;
+                margin:10px 4px 0 20px;
+                vertical-align: text-bottom;
+                padding: 0;
+            }
+            
+            
+        }
+        .cart_img {
+            width: 120px;
+            line-height: 70px;
+            height: 100%;
+            float: left;
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .cart_name {
+            width: 380px;
+            line-height: 70px;
+            height: 100%;
+            float: left;
+            
+        }
+        .cart_price {
+            width: 140px;
+            line-height: 70px;
+            margin-right: 18px;
+            text-align: center;
+            height: 100%;
+            float: left;
+           
+        }
+        .cart_count {
+            width: 150px;
+            line-height: 70px;
+            height: 100%;
+            float: left;
+            text-align: center;
+           
+        }
+        .cart_total {
+            width: 120px;
+            line-height: 70px;
+            margin-right: 80px;
+            height: 100%;
+            float: left;
+            text-align: right;
+            
+        }
+        .cart_action {
+            width: 80px;
+            line-height: 70px;
+            text-align: center;
+            height: 100%;
+            float: left;
+           
+        }
+
+        >.cart_list {
+            width: 1224px;
+            margin: 0 auto;
+           
+            background-color: white;
+            >.list_item {
+                overflow: hidden;
+                height: 117px;
+                padding: 15px 26px 15px 0;
+                border-bottom: 2px solid #f5f5f5;
+                .item_count {
+                    height: 40px;
+                    margin-top: 20px;
+                    border: 1px solid #e0e0e0;
+                    text-align: center;
+                    >.les {
+                        float: left;
+                        width: 38px;
+                        height: 38px;
+                        line-height: 38px;
+                        color: #757575;
+                        font-size: 30px;
+                        cursor: pointer;
+                        user-select: none;
+                        transition: all .6s;
+                    }
+                    >.count {
+                        float: left;
+                        width: 72px;
+                        border: none;
+                        height: 38px;
+                        text-align: center;
+                    }
+                    >.add {
+                        float: left;
+                        user-select: none;
+                        width: 38px;
+                        height: 38px;
+                        line-height: 38px;
+                        color: #757575;
+                        font-size: 20px;
+                        transition: all .6s;
+                        cursor: pointer;
+                    }
+                    >.les:hover {
+                        background-color: #e0e0e0;
+                    }
+                    >.add:hover {
+                        background-color: #e0e0e0;
+                    }
+                }
+                .item_total {
+                    color: #ff6700;
+                }
+                .item_action {
+                    
+                    .del_action {
+                        display: inline-block;
+                        width: 24px;
+                        height: 24px;
+                        line-height: 24px;
+                        text-align: center;
+                        border-radius: 12px;
+                        color: #757575;
+                        font-size: 16px;
+                        transition: all .5s;
+                        // background-color: red;
+                        cursor: pointer;
+                        margin-top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    .del_action:hover {
+                        background-color: #e53935;
+                        color: white;
+                    }
+                }
+                
+            }
+
+           
+        }
+        
+    }
+    // 支付
+    >.pay {
+        width: 1224px;
+        margin: 0 auto;
+        margin-top: 30px;
+        height: 50px;
+        padding-left: 32px;
+        background-color: #fff;
+        >p {
+            float: left;
+            height: 100%;
+            line-height: 50px;
+            font-size: 14px;
+            color: #333;
+            a {
+                color: #333;
+            }
+            a:hover {
+                color: #ff6700;
+            }
+            span {
+                color: #ff6700;
+                font-size: 14px;
+            }
+            >span:first-of-type {
+                display: inline-block;
+                color: #333;
+                margin:0 10px ;
+            }
+        }
+        // 付钱按钮
+        .payMoney {
+            float: right;
+            cursor: pointer;
+            text-align: center;
+            width: 200px;
+            height: 48px;
+            line-height: 48px;
+            font-size: 18px;
+            margin-left: 50px;
+            vertical-align: top;
+            background-color: #ff6700;
+            border-color: #ff6700;
+            color: #fff;
+        }
+        .payTotal {
+            float: right;
+            line-height: 48px;
+            height: 48px;
+            font-size: 18px;
+            color:#ff6700;
+        }
+    }
+}

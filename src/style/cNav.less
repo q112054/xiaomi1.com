@@ -1,0 +1,172 @@
+#cHeader {
+    // overflow: hidden;
+    position: relative;
+
+    // 二级导航
+    >.cNav_second {
+        position: absolute;
+        width: 100%;
+        // height: 230px;
+        height: 0px;
+        background-color: white;
+        top: 100px;
+        z-index: 9;
+        // border-top: 1px solid rgba(0, 0, 0, .1);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+        transition: all .5s ease;
+        overflow: hidden;
+
+        >.sc_nav {
+            width: 1226px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: left;
+            >.line {
+                margin-top: 30px;
+                height: 110px;
+                border-right: 1px solid rgba(0, 0, 0, .1);
+            }
+
+            >li {
+                width: 1226/6px;
+                flex-shrink: 0;
+                border-right: 2px solid white;
+                padding: 15px 30px 30px;
+
+                >.sc_navImg {
+
+                    width: 140px;
+                    height: 140px;
+                    >p {
+                        text-align: center;
+                        color: #333;
+                    }
+                    >p:last-of-type {
+                        color: #ff6700;
+                    }
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    >#cNav {
+        width: 1226px;
+        height: 100px;
+
+        margin: 0 auto;
+        // overflow: hidden;
+        // position: relative;
+
+
+
+        >.cNav_logo {
+            width: 63px;
+            height: 60px;
+            margin-top: 20px;
+            float: left;
+            background-color: #ff6700;
+            position: relative;
+
+            >a {
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: block;
+                background-color: #ff6700;
+                width: 60px;
+                height: 60px;
+                background: url('../images/mi-logo.png') no-repeat 50% 50%;
+                transition: all .2s;
+            }
+
+            >a:first-of-type {
+                background: url('../images/mi-logo.png') no-repeat 50% 50%;
+            }
+
+            >a:last-of-type {
+                left: -60px;
+                background: url('../images/mi-home.png') no-repeat 50% 50%;
+            }
+        }
+
+        >.cNav_logo:hover a:first-of-type {
+            transform: translateX(60px);
+        }
+
+        >.cNav_logo:hover a:last-of-type {
+            transform: translateX(60px);
+        }
+
+        >.cNav_search {
+            width: 880px;
+            padding-top: 12px;
+            padding-left: 30px;
+            float: left;
+
+
+
+            >li:first-of-type {
+                width: 100px;
+                // height: 75px;
+                margin-right: 15px;
+            }
+
+            >li {
+                margin-top: 25px;
+                float: left;
+
+                >a {
+                    font-size: 16px;
+                    color: #333;
+                    // margin: 26px 10px 38px;
+                    padding: 26px 10px 38px;
+                }
+                >a:hover{
+                    color: #ff6700;
+                }
+            }
+        }
+
+        >form {
+            width: 265px;
+            height: 50px;
+            float: left;
+            position: relative;
+            margin-top: 25px;
+
+            >input[type] {
+                height: 50px
+            }
+
+            >.fdj {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                text-align: center;
+                border-left: 1px solid #999;
+                border-radius: 4px;
+                cursor: pointer;
+
+                >span {
+                    font-size: 30px;
+                    line-height: 50px;
+                }
+            }
+
+            >.fdj:hover {
+                background: orange;
+            }
+
+            >.fdj:hover span {
+                color: white;
+            }
+        }
+    }
+}

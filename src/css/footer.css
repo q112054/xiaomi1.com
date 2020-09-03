@@ -1,0 +1,180 @@
+footer {
+  width: 100%;
+  height: auto;
+}
+footer > .footer_t {
+  width: 1224px;
+  height: 272px;
+  margin: 0 auto;
+  background-color: white;
+}
+footer > .footer_t > .footer_server {
+  height: 100px;
+  padding: 27px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+footer > .footer_t > .footer_server > li:first-of-type {
+  border-left: none;
+}
+footer > .footer_t > .footer_server > li {
+  transition: all 0.3s;
+  float: left;
+  width: 19.8%;
+  height: 25px;
+  border-left: 1px solid #e0e0e0;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+footer > .footer_t > .footer_server > li > a {
+  color: #616161;
+  font-size: 16px;
+}
+footer > .footer_t > .footer_server > li > a span {
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 26px;
+}
+footer > .footer_t > .footer_server > li:hover a {
+  color: #ff6700;
+}
+footer > .footer_t > .footer-mserver {
+  width: 1224px;
+  height: 192px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+footer > .footer_t > .footer-mserver nav {
+  width: 160px;
+  height: 112px;
+  float: left;
+}
+footer > .footer_t > .footer-mserver nav > li:first-of-type {
+  margin: -1px 0 26px;
+  font-size: 14px;
+  line-height: 1.25;
+}
+footer > .footer_t > .footer-mserver nav > li:first-of-type a {
+  color: #424242;
+}
+footer > .footer_t > .footer-mserver nav li {
+  margin: 10px 0 0;
+  font-size: 12px;
+}
+footer > .footer_t > .footer-mserver nav li a {
+  color: #757575;
+}
+footer > .footer_t > .footer-mserver > .footer_contact {
+  width: 252px;
+  float: right;
+  border-left: 1px solid #e0e0e0;
+  text-align: center;
+  color: #616161;
+  height: 111px;
+}
+footer > .footer_t > .footer-mserver > .footer_contact > .f_phone {
+  color: #ff6700;
+  font-size: 22px;
+  line-height: 1px;
+  margin: 12px 0;
+}
+footer > .footer_t > .footer-mserver > .footer_contact > p {
+  font-size: 12px;
+}
+footer > .footer_t > .footer-mserver > .footer_contact > .btn-small {
+  width: 118px;
+  height: 28px;
+  font-size: 12px;
+  line-height: 28px;
+  border-color: #ff6700;
+  color: #ff6700;
+  padding: 0;
+}
+footer > .footer_t > .footer-mserver > .footer_contact > .btn-small .icon-xiaoxi {
+  font-size: 12px;
+}
+footer > .footer_t > .footer-mserver > .footer_contact .gzxm {
+  margin-top: 10px;
+}
+footer > .footer_t > .footer-mserver > .footer_contact .gzxm > span {
+  font-size: 24px;
+}
+footer > .footer_b {
+  width: 100%;
+  height: 247px;
+  padding: 30px 0;
+  background-color: #fafafa;
+}
+footer > .footer_b > .fb_m {
+  width: 1224px;
+  height: 100%;
+  margin: 20px auto;
+  position: relative;
+}
+footer > .footer_b > .fb_m > .mi_log {
+  width: 57px;
+  height: 57px;
+  margin-right: 10px;
+  background: url('../images/milogo.png') no-repeat 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+footer > .footer_b > .fb_m > .info_text {
+  width: 1159px;
+  height: 91px;
+  margin-left: 67px;
+}
+footer > .footer_b > .fb_m > .info_text > .sites {
+  height: 20px;
+}
+footer > .footer_b > .fb_m > .info_text > .sites > li {
+  float: left;
+}
+footer > .footer_b > .fb_m > .info_text > .sites > li a {
+  border-right: 1px solid #757575;
+  padding: 0 3px;
+  font-size: 10px;
+  color: #757575;
+}
+footer > .footer_b > .fb_m > .info_text > .sites > li:last-child a {
+  border-right: none;
+}
+footer > .footer_b > .fb_m > .info_text p {
+  font-size: 12px;
+  color: #333;
+  line-height: 18px;
+}
+footer > .footer_b > .fb_m > .info_text p a {
+  color: #b0b0b0;
+}
+footer > .footer_b > .fb_m > .info_text p a:hover {
+  color: #ff6709;
+}
+footer > .footer_b > .fb_m > .info_text > .links {
+  height: 28px;
+  margin: 4px 0 15px;
+}
+footer > .footer_b > .fb_m > .info_text > .links .d1 {
+  width: 83px;
+  height: 28px;
+  float: left;
+  margin-right: 8px;
+}
+footer > .footer_b > .fb_m > .info_text > .links img {
+  width: 100%;
+  height: 100%;
+}
+footer > .footer_b > .fb_m > .info_text > .links .d2 {
+  margin-top: -10px;
+  float: left;
+  width: 106px;
+  height: 40px;
+}
+footer > .footer_b > .fb_m > .slogan {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background: url('../images/slogan2020.png') no-repeat 50% 50%;
+}
